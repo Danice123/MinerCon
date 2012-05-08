@@ -1,0 +1,23 @@
+MinerCon by Danice123
+
+The easy Java Minecraft Rcon handler.
+
+Feel free to use. Credit is much appriciated.
+
+Rcon(String ip, int port, String password)
+
+Rcon.sendCommand(String Command)
+> No special formatting needed, send jast as you would from the console.
+
+Packet Rcon.nextResponse()
+> Returns the next buffered packet
+
+Rcon.closeSocket()
+> Shuts down the connection
+
+Packet
+length - length of packet
+id - id number, sequential from the client
+cmd - command number, sent by the server
+s1 - first string
+s2 - second string (Minecraft may not use this string)
